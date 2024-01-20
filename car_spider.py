@@ -19,5 +19,7 @@ url = 'https://motorz-garage.com/parts/'
 CSSセレクターの設定
 """
 PAGER_NEXT = ”li.select-page.arrow a[rel='next']”
-POSTS = "product-item-list__item"
-PRODUCT_NAME = "product-item-list__item-name"
+POSTS = ".product-item-list__item"
+PRODUCT_NAME = ".product-item-list__item-name"
+IMAGE = ".product-item-list__item-image img"
+PRICE = ".product-item-list__item-price"
