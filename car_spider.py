@@ -32,3 +32,4 @@ CAR = ".product-item-list__item-car-name"
 broeser.get(url)
 
 while True: #Continue until getting the last page.
+    if len(broeser.find_elements_by_css_selector(PAGER_NEXT)) > 0:
