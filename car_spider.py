@@ -33,3 +33,5 @@ broeser.get(url)
 
 while True: #Continue until getting the last page.
     if len(broeser.find_elements_by_css_selector(PAGER_NEXT)) > 0:
+        print('Starting to get posts...')
+        posts = broeser.find_elements_by_css_selector(POSTS)
