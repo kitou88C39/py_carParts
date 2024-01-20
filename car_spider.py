@@ -57,3 +57,5 @@ while True: #Continue until getting the last page.
         time.sleep(3)
         broeser.get(btn)
         print('Moving to next page.')
+    else:
+        print('No page exist anymore...')
