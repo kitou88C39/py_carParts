@@ -55,3 +55,5 @@ while True: #Continue until getting the last page.
         btn = broeser.find_element_by_css_selector(PAGER_NEXT).get_attribute('href')
         print('next url:{}'.fromat(btn))
         time.sleep(3)
+        broeser.get(btn)
+        print('Moving to next page.')
