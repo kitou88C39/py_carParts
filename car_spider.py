@@ -43,3 +43,8 @@ while True: #Continue until getting the last page.
                 thumbnailURL = post.find_element_by_css_selector(IMAGE).get_attribute('src')
                 print(thumbnailURL)
                 price = post.find_element_by_css_selector(PRICE).text
+                print(price)
+                category = post.find_element_by_css_selector(CATEGORY).text
+                print(category)
+                car = post.find_element_by_css_selector(CAR).text
+                print(car)
