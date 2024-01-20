@@ -3,8 +3,9 @@ import pandas as pd
 import time
 
 
-”””[Initial setting]
-# 初期設定
-"""
+# Initial setting
 
-option = webdriver.ChromeOprions()
+option = webdriver.ChromeOptions()
+option.add_argument('__headeless')
+option.add_argument('__disable_gpu')
+option.add_argument('__lang_ja')
