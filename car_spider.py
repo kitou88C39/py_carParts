@@ -38,4 +38,6 @@ while True: #Continue until getting the last page.
         print(len(posts))
         for post in posts:
             try:
-                name = post..find_element_by_css_selector(PRODUCT_NAME).text
+                name = post.find_element_by_css_selector(PRODUCT_NAME).text
+                print(name)
+                thumbnailURL = post.find_element_by_css_selector(IMAGE)
