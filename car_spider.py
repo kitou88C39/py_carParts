@@ -48,3 +48,5 @@ while True: #Continue until getting the last page.
                 print(category)
                 car = post.find_element_by_css_selector(CAR).text
                 print(car)
+                se = pd.Series([name, thumbnailURL, price, category, car], ['name', 'image', 'price', 'category', 'car'])
+                df.append(se, igonore_index=True)
