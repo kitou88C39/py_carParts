@@ -23,3 +23,12 @@ POSTS = ".product-item-list__item"
 PRODUCT_NAME = ".product-item-list__item-name"
 IMAGE = ".product-item-list__item-image img"
 PRICE = ".product-item-list__item-price"
+CATEGORY = ".product-item-list__item-category"
+CAR = ".product-item-list__item-car-name"
+
+"""[Activate Section]
+実行部分
+"""
+broeser.get(url)
+
+while True: #Continue until getting the last page.
