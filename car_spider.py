@@ -40,4 +40,6 @@ while True: #Continue until getting the last page.
             try:
                 name = post.find_element_by_css_selector(PRODUCT_NAME).text
                 print(name)
-                thumbnailURL = post.find_element_by_css_selector(IMAGE)
+                thumbnailURL = post.find_element_by_css_selector(IMAGE).get_attribute('src')
+                print(thumbnailURL)
+                price = post.find_element_by_css_selector(PRICE).text
