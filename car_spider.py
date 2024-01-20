@@ -50,3 +50,5 @@ while True: #Continue until getting the last page.
                 print(car)
                 se = pd.Series([name, thumbnailURL, price, category, car], ['name', 'image', 'price', 'category', 'car'])
                 df.append(se, igonore_index=True)
+            except Exception as e:
+                print(e)
