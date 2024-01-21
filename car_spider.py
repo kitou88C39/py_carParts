@@ -60,4 +60,6 @@ while True: #Continue until getting the last page.
     else:
         print('No page exist anymore...')
         break
-    print('Finished Crawling. Writing out to CSV file.')
+    print('Finished Crawling. Writing out to CSV file...')
+    df.to_csv('car_parts.csv')
+    print('Done')
