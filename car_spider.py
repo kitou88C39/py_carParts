@@ -59,3 +59,5 @@ while True: #Continue until getting the last page.
         print('Moving to next page.')
     else:
         print('No page exist anymore...')
+        break
+    print('Finished Crawling. Writing out to CSV file.')
