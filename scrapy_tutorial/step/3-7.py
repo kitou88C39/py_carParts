@@ -13,3 +13,5 @@ with open(filename, "w") as f:
     for element in soup.find_all("a"):
            url=element.get("href")
            link_url=urllib.parser.urljoin(load_url, url)
+           f.write(element.text+"\n")
+           f.write(link_url+"\n")
