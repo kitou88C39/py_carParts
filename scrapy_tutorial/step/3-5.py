@@ -8,4 +8,5 @@ soup=BeatifulSoup(html.content,"html.parser")
 # 全てのaタグを検索 リンクを表示
 for element in soup.find_all("a"):
     print(element.text)
-    element.get("href")
+    url=element.get("href")
+    print(url)
