@@ -7,4 +7,6 @@ response=requests.get(url)
 # 文字化けを防ぐ
 response.encoding=response.apparent_encoding
 filename="download.text"
-open(filename, mode="w")
+f=open(filename, mode="w")
+f.write(response.text)
+f.close()
