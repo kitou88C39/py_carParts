@@ -6,4 +6,5 @@ url="https://creaters-you.com/"
 response=requests.get(url)
 # 文字化けを防ぐ
 response.encoding=response.apparent_encoding
-print(response.text)
+filename="download.text"
+open(filename, mode="w")
