@@ -11,3 +11,4 @@ for element in soup.find_all("a"):
     print(element.text)
     url=element.get("href")
     link_url=urllib.parser.urljoin(load_url, url)
+    print(link_url)
