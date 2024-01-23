@@ -7,4 +7,5 @@ soup=BeatifulSoup(html.content,"html.parser")
 
 # IDで検索 中身のliタグを表示
 chap1=soup.find(id="chap1")
-for element in chap1.find_all("li")
+for element in chap1.find_all("li"):
+    print(element.text)
