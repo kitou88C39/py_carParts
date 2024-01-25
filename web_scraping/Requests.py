@@ -6,6 +6,11 @@ response.text
 response.content
 response.encoding
 response.headers
+response.cookies
 
 for key, value in response.headers.items():
     print(key, " ", value)
+
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+header = ["user_agent": user_agent]
+url = "https://www.yahoo.co.jp/"
