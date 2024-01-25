@@ -6,3 +6,8 @@ print(soup.prettify())
 
 print(soup.html.head.title)
 print(soup.title)
+
+print(soup.find_all("a"))
+
+for tag_a in soup.find_all("a"):
+    print(tag_a, end="¥n¥n")
