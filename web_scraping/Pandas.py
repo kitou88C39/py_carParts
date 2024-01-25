@@ -16,3 +16,4 @@ data[0].head()
 
 data[0].set_index("Date2"、inplace=True)
 data[0].head()
+data[0]["Adj Close**"].dtype
