@@ -22,3 +22,7 @@ print(soup.select("body > p.end > b")[0].string)
 ## 読売新聞オンライン
 import requests
 from bs4 import BeautifulSoup
+
+url = "https://www.yahoo.co.jp"
+response = requests.get(url)
+response.status_code
