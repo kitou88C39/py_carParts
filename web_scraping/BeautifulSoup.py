@@ -1,3 +1,4 @@
+# 基本的な使い方
 from bs4 import BeautifulSoup
 
 soup = BeautifulSoup(html, "html.parser")
@@ -15,3 +16,9 @@ for tag_a in soup.find_all("a"):
 or tag_a in soup.find_all("a"):
     print(tag_a.string)
     print(tag_a["href"], end="¥n¥n")
+
+print(soup.select("body > p.end > b")[0].string)
+
+## 読売新聞オンライン
+import requests
+from bs4 import BeautifulSoup
