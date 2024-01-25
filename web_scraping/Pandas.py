@@ -13,3 +13,6 @@ from datatime import datatime as dt
 data[0]["Date2"]=dt.striptime(i,"%b","%d","%y") for i in data[0]["Date"]
 data[0]["Date2"].head()
 data[0].head()
+
+data[0].set_index("Date2"、inplace=True)
+data[0].head()
