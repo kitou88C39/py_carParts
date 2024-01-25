@@ -20,5 +20,6 @@ response.status_code
 response.text
 
 response = requests.get(url, timeout=3)
-response.status_code
-response.text
+response.text[:500]
+param = ["q":"python"]
+response = requests.get("https://www.yahoo.co.jp/search", params=param)
