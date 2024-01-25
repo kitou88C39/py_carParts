@@ -23,6 +23,9 @@ print(soup.select("body > p.end > b")[0].string)
 import requests
 from bs4 import BeautifulSoup
 
+# HTMLデータの取得
 url = "https://www.yahoo.co.jp"
 response = requests.get(url)
 response.status_code
+response.text
+soup = BeautifulSoup(response.text, "html.parser")
