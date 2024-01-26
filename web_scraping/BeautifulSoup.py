@@ -46,3 +46,10 @@ elems[0].li.next_sibling.next_sibling.h3.a["href"]
 for sibling in elems[0].li.next_sibling:
     print(sibling.h3.a.sibling if sibling !="¥n" else "")
     print(sibling.h3.a["href"] if sibling !="¥n" else "")
+
+print(elems[0].prettify())
+elems_news = elems[0].find_all("h3")
+
+for elems in elems.news:
+    print(elems.a.string)
+    print(elems.a["href"], end="¥n¥n")
