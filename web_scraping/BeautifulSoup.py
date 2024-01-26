@@ -37,3 +37,12 @@ elems[0].attrs[0]
 elems = soup.select('ul > li:nth-of-type(1) > article > div.p-list-item__inner > h3 > a')
 elems[0]
 print(elems[0].prettify())
+print(type(elems[0]))
+elems[0].h3.a.string
+elems[0].h3.a["href"]
+elems[0].li.next_sibling.next_sibling
+elems[0].li.next_sibling.next_sibling.h3.a.string
+elems[0].li.next_sibling.next_sibling.h3.a["href"]
+for sibling in elems[0].li.next_sibling:
+    print(sibling.h3.a.sibling if sibling !="¥n" else "")
+    print(sibling.h3.a["href"] if sibling !="¥n" else "")
