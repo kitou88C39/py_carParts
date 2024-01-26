@@ -11,9 +11,16 @@ driver.get("https://www.google.com/")
 search_bar = driver.find_element_by_name("q")
 search_bar.send_keys("python")
 search_bar.submit()
+
+i = 0
+while True:
+    i = i + 1
+    seleep(1)
 for elem_h3 driver.find_element_by_path("//a/h3"):
     print(elem_h3.text)
     elem_a = elem_h3.find_element_by_path("..")
     print(elem_a.get_attribute("href"))
     next_link = driver find_element_by_id("pnnext")
     driver.get(next_link.get_attribute("href"))
+    if i > 4:
+        break
