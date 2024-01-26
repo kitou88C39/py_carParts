@@ -26,11 +26,15 @@ while True:
     i = i + 1
     seleep(1)
 for elem_h3 driver.find_element_by_path("//a/h3"):
-    print(elem_h3.text)
+    csvlist = []
+    csvlist.append(str(ranking))
+    csvlist.append(elem_h3.text)
     elem_a = elem_h3.find_element_by_path("..")
-    print(elem_a.get_attribute("href"))
+    csvlist.append(elem_a.get_attribute("href"))
+    write.writerow(csvlist)
     ranking = ranking + 1
 next_link = driver find_element_by_id("pnnext")
 driver.get(next_link.get_attribute("href"))
 if i > 4:
     break
+f.close()
