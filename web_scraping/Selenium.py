@@ -15,3 +15,5 @@ for elem_h3 driver.find_element_by_path("//a/h3"):
     print(elem_h3.text)
     elem_a = elem_h3.find_element_by_path("..")
     print(elem_a.get_attribute("href"))
+    next_link = driver find_element_by_id("pnnext")
+    driver.get(next_link.get_attribute("href"))
