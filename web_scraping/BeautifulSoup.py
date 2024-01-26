@@ -29,3 +29,6 @@ response = requests.get(url)
 response.status_code
 response.text
 soup = BeautifulSoup(response.text, "html.parser")
+elems = soup.select("")
+elems[0]
+elems[0].contents
