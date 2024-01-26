@@ -29,7 +29,11 @@ response = requests.get(url)
 response.status_code
 response.text
 soup = BeautifulSoup(response.text, "html.parser")
-elems = soup.select("")
+elems = soup.select('body > div.layout-contents > div.layout-contents__main > div > div.home-main-news-organization.p-category-latest > section > ul > li:nth-of-type(1) > article > div.p-list-item__inner > h3 > a')
 elems[0]
 elems[0].contents[0]
 elems[0].attrs[0]
+
+elems = soup.select('ul > li:nth-of-type(1) > article > div.p-list-item__inner > h3 > a')
+elems[0]
+print(elems[0].prettify())
