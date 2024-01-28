@@ -29,5 +29,11 @@ elems_th[1].text
 
 # テキストデータを一括取得
 elems_th = browser.find_elements_by_tag_name('th')
-elem_th = elems_th[0]
-text = elems_th.text
+elem_th = elems_th[3]
+key = elems_th.text
+
+keys = []
+elems_th = browser.find_elements_by_tag_name('th')
+for elem_th in elems_th:
+    key = elem_th.text
+    keys.append(key)
