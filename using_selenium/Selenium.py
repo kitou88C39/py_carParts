@@ -37,3 +37,7 @@ elems_th = browser.find_elements_by_tag_name('th')
 for elem_th in elems_th:
     key = elem_th.text
     keys.append(key)
+
+values = []
+elems_td = browser.find_elements_by_tag_name('td')
+elem_td = elems_td[0]
