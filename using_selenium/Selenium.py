@@ -55,3 +55,4 @@ df = pd.DataFrame()
 df['項目']= keys
 df['値']= values
 
+df.to_csv('講師情報.csv', index=False)
