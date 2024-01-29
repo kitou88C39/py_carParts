@@ -52,3 +52,6 @@ for elem_th in elems_td:
 import pandas as pd
 # 空のDataFrameを定義
 df = pd.DataFrame()
+df['項目']= keys
+df['値']= values
+
