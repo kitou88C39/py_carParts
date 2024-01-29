@@ -41,3 +41,12 @@ for elem_th in elems_th:
 values = []
 elems_td = browser.find_elements_by_tag_name('td')
 elem_td = elems_td[0]
+
+# 情報を一個ずつ取り出す
+values = []
+for elem_th in elems_td:
+    value = elem_td.text
+    values.append(value)
+
+# csvファイルに出力する
+import pandas as pd
